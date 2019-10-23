@@ -5,6 +5,7 @@ html {
 }
 
 header {
+  display: block;
   background-color: #ffe500;
   margin: 0;
   padding: 0;
@@ -16,7 +17,7 @@ body {
 
 h1 {
   color: #cc1465;
-  font-family: Sigmar One;
+  font-family: "Sigmar One";
   font-size: 3rem;
   text-align: center;
   margin: 0;
@@ -26,30 +27,53 @@ h1 {
 h2 {
   margin: .3em;
   color: #cc1465;
-  font-family: Sigmar One;
+  font-family: "Sigmar One";
   font-size: 1.875rem;
-  font-family: Sigmar One;
-
 }
 
 ul {
+  display: block;
   margin: 0;
+  padding: .75em;
   text-align: center;
-
 }
 
 ul li {
+  margin: 0.3em;
   display: inline-block;
   background-color: #b2a212;
-  padding: .2em .5em .3em;
-  border-radius: 4px;
+  padding: 0;
+}
+
+nav {
+  display: block;
+  padding: .2em;
 }
 
 nav a {
-    text-decoration: none;
-    font-size: 1.125rem;
-    color: #fff;
-    margin:.3em;
+  text-decoration: none;
+  font-size: 1.125rem;
+  color: #fff;
+  background-color: #b2a212;
+  border-radius: 4px;
+  margin: 0;
+  padding: .5em;
+}
+
+nav .current {
+  background-color: #cc1465;
+  padding: .5em;
+  margin: 0;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: #b20953;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 footer {
