@@ -4,6 +4,10 @@ html {
   font-family: Georgia, serif;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 header {
   display: block;
   background-color: #ffe500;
@@ -13,10 +17,11 @@ header {
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 h1 {
-  color: #cc1465;
+  color: #b20953;
   font-family: "Sigmar One";
   font-size: 3rem;
   text-align: center;
@@ -25,8 +30,8 @@ h1 {
 }
 
 h2 {
-  margin: .3em;
-  color: #cc1465;
+  margin: .75em .4em;
+  color: #b20953;
   font-family: "Sigmar One";
   font-size: 1.875rem;
 }
@@ -34,15 +39,23 @@ h2 {
 ul {
   display: block;
   margin: 0;
-  padding: .75em;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: .5em;
   text-align: center;
 }
 
 ul li {
-  margin: 0.3em;
+  margin: 0;
   display: inline-block;
   background-color: #b2a212;
   padding: 0;
+}
+
+p {
+  margin: 0 .3em .5em;
+  color: #2f2d13;
+  padding: .5em;
 }
 
 nav {
@@ -57,23 +70,26 @@ nav a {
   background-color: #b2a212;
   border-radius: 4px;
   margin: 0;
-  padding: .5em;
+  padding: .4em .5em;
 }
 
 nav .current {
-  background-color: #cc1465;
-  padding: .5em;
+  background-color: #b20953;
+  padding: .4em .5em;
   margin: 0;
   border-radius: 4px;
 }
 
 nav a:hover {
-  background-color: #b20953;
+  background-color: #cc1465;
 }
 
 img {
   display: block;
   width: 100%;
+  margin: .5em;
+  max-width: 24em;
+  padding: .3em;
 }
 
 footer {
